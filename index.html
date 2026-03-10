@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img class="navbar__logo" src="./assets/icons/bubble_chart_logo.svg" alt="logo du site Thé Bulles">
+                <h1 class="navbar__brand-title">Thé Bulles</h1>
+            </div>
+            <ul class="navbar__links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Nos services</a></li>
+                <li><a href="#activities">Activités</a></li>
+                <li><a href="#testimonies">Témoignages</a></li>
+                <li><a href="#contact">Nous joindre</a></li>
+            </ul>
+            <button class="navbar__cta">Commander</button>
+        </nav>
+        <div class="hero">
+            <div class="hero__header">
+                <h1 class="hero__title">Chez <span class="hero__title-highlight">Thé Bulles</span></h1>
+                <p class="hero__desc">Découvrez notre sélection de thés maison exquis.</p>
+                <div class="hero__buttons">
+                    <button class="hero__learn-more">En savoir plus</button>
+                    <button class="hero__order-now">Commander maintenant</button>
+                </div>
+            </div>
+            <div class="hero__image-container"></div>
+        </div>
+    </header>
+    <hr>
+    <section id="about">
+        <div class="section-header">
+            <h2>À propos</h2>
+            <p class="section-header__desc">Nous sommes passionnés par le thé et souhaitons partager notre amour avec vous!</p>
+        </div>
+        <div class="about__cards-container">
+
+            <div class="about-card">
+                <div class="about-card__icon-container">
+                    <img src="./assets/icons/history_edu.svg" alt="icône d'une feuille de papier et d'une plume" class="about-card__icon">
+                </div>
+                <div class="about-card__text">
+                    <h3 class="about-card__title">Notre histoire</h3>
+                    <p class="about-card__description">Chez Thé Bulle, chaque tasse de thé est préparée avec soin.</p>
+                </div>
+                <div class="about-card__signature">
+                    <div class="about-card__signature__avatar"></div>
+                    <p class="about-card__signature__name">L'équipe Thé Bulle</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card__icon-container">
+                    <img src="./assets/icons/emoji_food_beverage.svg" alt="icône d'une tasse de thé" class="about-card__icon">
+                </div>
+                <div class="about-card__text">
+                    <h3 class="about-card__title">Nos thés tant appréciés</h3>
+                    <p class="about-card__description">Recettes est concoctées avec tout notre coeur.</p>
+                </div>
+                <div class="about-card__signature">
+                    <div class="about-card__signature__avatar"></div>
+                    <p class="about-card__signature__name">L'équipe Thé Bulle</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card__icon-container">
+                    <img src="./assets/icons/relaxation.svg" alt="icône de relaxation" class="about-card__icon">
+                </div>
+                <div class="about-card__text">
+                    <h3 class="about-card__title">Citation importante</h3>
+                    <blockquote class="about-card__description about-card__quote">"Le thé a une magie qui unit l'esprit et le cœur."</blockquote>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <section id="services">
+        <h2>Nos produits</h2>
+        <article class="procuct-card">
+            <div class="procuct-card__image-container">
+                <div class="procuct-card__badge">À essayer</div>
+                <h3 class="procuct-card__image-title">Bubble tea au lait</h3>
+            </div>
+            <div class="product-card__text-container">
+                <h3 class="product-card__title">Bubble Tea au lait</h3>
+                <p class="product-card__description">Délicieux, crémeux et mémorable.</p>
+            </div>
+        </article>
+        <article class="procuct-card">
+            <div class="procuct-card__image-container">
+                <div class="procuct-card__badge">Populaire</div>
+                <h3 class="procuct-card__image-title">Thé glacé</h3>
+            </div>
+            <div class="product-card__text-container">
+                <h3 class="product-card__title">Thé Glacé</h3>
+                <p class="product-card__description">Rafraîchissant pour les journées chaudes.</p>
+            </div>
+        </article>
+        <article class="procuct-card">
+            <div class="procuct-card__image-container">
+                <div class="procuct-card__badge">Fait maison</div>
+                <h3 class="procuct-card__image-title">Thé glacé aux fruits</h3>
+            </div>
+            <div class="product-card__text-container">
+                <h3 class="product-card__title">Thé aux Fruits</h3>
+                <p class="product-card__description">Une explosion de saveurs en bouche.</p>
+            </div>
+        </article>
+    </section>
+    <section id="activities">
+        <div>
+            <h2>Heures d'ouvertures</h2>
+            <p class="section-header__desc">Venez nous rendre visite !</p>
+        </div>
+        <div >
+            <div class="oppenings-card">
+                <div class="oppenings-card__icon">
+                    🕔
+                </div>
+                <div>
+                    <h3 class="oppenings-card__date">Lundi-Vendredi</h3>
+                    <p class="oppenings-card__hour">10h-22h</p>
+                </div>
+            </div>
+            <div class="oppenings-card">
+                <div class="oppenings-card__icon">
+                    🕔
+                </div>
+                <div>
+                    <h3 class="oppenings-card__date">Samedi</h3>
+                    <p class="oppenings-card__hour">11h-23h</p>
+                </div>
+            </div>
+            <div class="oppenings-card">
+                <div class="oppenings-card__icon">
+                    🕔
+                </div>
+                <div>
+                    <h3 class="oppenings-card__date">Dimanche</h3>
+                    <p class="oppenings-card__hour">10h-20h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonies">
+        <h2>Témoignages</h2>
+        <div>
+            <div>
+                <div>
+                    <img src="" alt="">
+                    <h3>Sophie</h3>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <img src="./assets/icons/supervisor_account.svg" alt="">
+        </div>
+        <div>
+            <h3>Notre super équipe</h3>
+            <p>Rencontrez les passionnés derrière Thé Bulle.</p>
+        </div>
+        <button>Rejoindre notre équipe</button>
+    </section>
+    <section>
+        <div>
+            <img src="./assets/icons/User.svg" alt="">
+            <div>
+                <h4>Alice – Barista</h4>
+                <p>Expert en Bubble Tea</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Nos prix</h2>
+            <p class="section-header__desc">Choisissez votre offre.</p>
+        </div>
+        <div>
+            <h3>Petite tasse</h3>
+            <div>3$</div>
+            <p>Thé classique</p>
+        </div>
+        
+    </section>
+    <section>
+        <h2>Nous joindre</h2>
+        <div>
+            <div>
+                <h3>Notre adresse</h3>
+                <p>4444 rue des Bulles Montréal, Qc, Canada H5H W4W</p>
+            </div>
+            <img src="./assets/maps_place.png" alt="">
+        </div>
+        <hr>
+        <div>
+            <h3>Nous contacter</h3>
+            <div>
+                <div>
+                    <h4>Votre Nom</h4>
+                    <input type="text">
+                </div>
+
+            </div>
+            <div>
+                <button>Annuler</button>
+                <button>Envoyer</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div></div>
+        </div>
+        <div>
+            <h3>Où nous trouver ?</h3>
+            <img src="./assets/big_maps.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
