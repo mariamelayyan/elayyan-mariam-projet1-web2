@@ -7,6 +7,7 @@
 }
 :root {
     /* ===== COULEURS ===== */
+    --color-bg-light: #EBEFF0;
     --color-bg-dark: #264653;
     --color-primary: #2A9D8F;
     --color-secondary: #E9C46A;
@@ -35,12 +36,14 @@
     --font-weight-bold: 700;
     --font-weight-extra-bold: 900;
         /* ===== ESPACEMENT ===== */
+    --space-xxs: 0.5rem;
     --space-xs: 0.625rem;
     --space-sm: 0.75rem;
     --space-md: 1rem;
     --space-lg: 1.375rem;
     --space-xl: 1.5rem;
-    --space-2xl: 3.75rem;  
+    --space-2xl: 2.5rem;
+    --space-3xl: 3.75rem;  
     --space-4xl: 5rem;
     --space-5xl: 10.625rem;
         /* ===== BORDER RADIUS ===== */
@@ -132,8 +135,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    padding: var(--space-2xl) var(--space-5xl);
-    gap: var(--space-2xl);
+    padding: var(--space-3xl) var(--space-5xl);
+    gap: var(--space-3xl);
     flex-wrap: nowrap;
 }
 .hero__image-container {
@@ -198,8 +201,7 @@ h2 {
     font-size: var(--font-size-4xl); 
 }
 section {
-    padding-top: var(--space-2xl);
-    padding-bottom: var(--space-2xl);
+    padding: var(--space-3xl) var(--space-5xl);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,4 +218,60 @@ section {
     line-height: 150%;
     text-align: center;
     width: 32.5rem;
+    line-height: 150%;
 }
+.about__cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+    padding: var(--space-lg) 0;
+}
+.about__top-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+    padding: var(--space-lg) 0;
+}
+.about-card--full-width {
+    align-self: stretch;
+}
+.about-card {
+    flex: 1;
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-md);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+.about-card__icon {
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-md);
+}
+.about-card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-xxs);
+}
+.about-card__signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xxs);
+    margin-top: var(--space-xxs);
+}
+.about-card__avatar {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    background-color: #0000001A;
+    border-radius: 50%;
+}
+
