@@ -32,7 +32,7 @@
                     <button class="hero__order-now">Commander maintenant</button>
                 </div>
             </div>
-            <div class="hero__image-container"></div>
+                <div class="hero__image-container"></div>
         </div>
     </header>
     <hr>
@@ -80,81 +80,84 @@
     </section>
     <section id="services">
         <h2>Nos produits</h2>
-        <article class="procuct-card">
-            <div class="procuct-card__image-container">
-                <div class="procuct-card__badge">À essayer</div>
-                <h3 class="procuct-card__image-title">Bubble tea au lait</h3>
-            </div>
-            <div class="product-card__text-container">
-                <h3 class="product-card__title">Bubble Tea au lait</h3>
-                <p class="product-card__description">Délicieux, crémeux et mémorable.</p>
-            </div>
-        </article>
-        <article class="procuct-card">
-            <div class="procuct-card__image-container">
-                <div class="procuct-card__badge">Populaire</div>
-                <h3 class="procuct-card__image-title">Thé glacé</h3>
-            </div>
-            <div class="product-card__text-container">
-                <h3 class="product-card__title">Thé Glacé</h3>
-                <p class="product-card__description">Rafraîchissant pour les journées chaudes.</p>
-            </div>
-        </article>
-        <article class="procuct-card">
-            <div class="procuct-card__image-container">
-                <div class="procuct-card__badge">Fait maison</div>
-                <h3 class="procuct-card__image-title">Thé glacé aux fruits</h3>
-            </div>
-            <div class="product-card__text-container">
-                <h3 class="product-card__title">Thé aux Fruits</h3>
-                <p class="product-card__description">Une explosion de saveurs en bouche.</p>
-            </div>
-        </article>
+        <div class="products__cards-container">
+            <article class="product-card">
+                <div class="product-card__image-container">
+                    <div class="product-card__badge">À essayer</div>
+                    <div class="product-card__image-title">Bubble tea au lait</div>
+                </div>
+                <div class="product-card__text-container">
+                    <h3 class="product-card__title">Bubble Tea au lait</h3>
+                    <p class="product-card__description">Délicieux, crémeux et mémorable.</p>
+                </div>
+            </article>
+            <article class="product-card product-card--popular">
+                <div class="product-card__image-container">
+                    <div class="product-card__badge product-card__badge--popular">Populaire</div>
+                    <div class="product-card__image-title">Thé glacé</div>
+                </div>
+                <div class="product-card__text-container">
+                    <h3 class="product-card__title">Thé Glacé</h3>
+                    <p class="product-card__description">Rafraîchissant pour les journées chaudes.</p>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-card__image-container">
+                    <div class="product-card__badge">Fait maison</div>
+                    <div class="product-card__image-title">Thé glacé aux fruits</div>
+                </div>
+                <div class="product-card__text-container">
+                    <h3 class="product-card__title">Thé aux Fruits</h3>
+                    <p class="product-card__description">Une explosion de saveurs en bouche.</p>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="activities">
-        <div>
+        <div class="section-header">
             <h2>Heures d'ouvertures</h2>
             <p class="section-header__desc">Venez nous rendre visite !</p>
         </div>
-        <div >
+        <div class="oppenings__cards-container">
             <div class="oppenings-card">
                 <div class="oppenings-card__icon">
                     🕔
                 </div>
-                <div>
-                    <h3 class="oppenings-card__date">Lundi-Vendredi</h3>
-                    <p class="oppenings-card__hour">10h-22h</p>
-                </div>
+                <h3 class="oppenings-card__date">Lundi-Vendredi</h3>
+                <p class="oppenings-card__hour">10h-22h</p>
             </div>
             <div class="oppenings-card">
                 <div class="oppenings-card__icon">
                     🕔
                 </div>
-                <div>
-                    <h3 class="oppenings-card__date">Samedi</h3>
-                    <p class="oppenings-card__hour">11h-23h</p>
-                </div>
+                <h3 class="oppenings-card__date">Samedi</h3>
+                <p class="oppenings-card__hour">11h-23h</p>
             </div>
             <div class="oppenings-card">
                 <div class="oppenings-card__icon">
                     🕔
                 </div>
-                <div>
-                    <h3 class="oppenings-card__date">Dimanche</h3>
-                    <p class="oppenings-card__hour">10h-20h</p>
-                </div>
+                <h3 class="oppenings-card__date">Dimanche</h3>
+                <p class="oppenings-card__hour">10h-20h</p>
             </div>
         </div>
     </section>
-    <section id="testimonies">
+    <section id="testimonials">
         <h2>Témoignages</h2>
-        <div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Sophie</h3>
+        <div class="comments-container">
+            <div class="comment-card">
+                <div class="comment-card__header">
+                    <img src="./assets/icons/person.svg" alt="icon de personne" class="comment-card__avatar">
+                    <h3 class=".comment-card__user-name">Sophie</h3>
                 </div>
-                
+                <p class="comment-card__text">Meilleur bubble tea que j'aie jamais goûté !</p>
+            </div>
+            <div class="comment-card">
+                <div class="comment-card__header">
+                    <img src="./assets/icons/person.svg" alt="icon de personne" class="comment-card__avatar">
+                    <h3 class=".comment-card__user-name">Jean</h3>
+                </div>
+                <p class="comment-card__text">Un endroit agréable pour se détendre.</p>
             </div>
         </div>
     </section>
