@@ -113,6 +113,7 @@
             </article>
         </div>
     </section>
+
     <section id="activities">
         <div class="section-header">
             <h2>Heures d'ouvertures</h2>
@@ -161,55 +162,92 @@
             </div>
         </div>
     </section>
-    <section>
-        <div>
-            <img src="./assets/icons/supervisor_account.svg" alt="">
-        </div>
+
+    <section class="contact-team">
+        <img src="./assets/icons/supervisor_account.svg" alt="icon d'équipe">
+        
         <div>
             <h3>Notre super équipe</h3>
             <p>Rencontrez les passionnés derrière Thé Bulle.</p>
         </div>
+        
         <button>Rejoindre notre équipe</button>
     </section>
+
     <section>
-        <div>
-            <img src="./assets/icons/User.svg" alt="">
-            <div>
-                <h4>Alice – Barista</h4>
-                <p>Expert en Bubble Tea</p>
+        <div class="team-member">
+            <img src="./assets/icons/User.svg" alt="icon d'utilisateur" class="team-member__icon">
+            <div class="team-member__desc">
+                <h4 class="team-member__nom">Alice – Barista</h4>
+                <p class="team-member__expertise">Expert en Bubble Tea</p>
             </div>
         </div>
+
+        <div class="team-member">
+            <img src="./assets/icons/User.svg" alt="icon d'utilisateur" class="team-member__icon">
+            <div class="team-member__desc">
+                <h4 class="team-member__nom">Lucie – Gestion</h4>
+                <p class="team-member__expertise">Votre contact privilégié</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="./assets/icons/User.svg" alt="icon d'utilisateur" class="team-member__icon">
+            <div class="team-member__desc">
+                <h4 class="team-member__nom">Thomas – Barista</h4>
+                <p class="team-member__expertise">Créateur de recettes</p>
+            </div>
+        </div>
+
     </section>
     <section>
-        <div>
+        <div class="section-header">
             <h2>Nos prix</h2>
             <p class="section-header__desc">Choisissez votre offre.</p>
         </div>
-        <div>
-            <h3>Petite tasse</h3>
-            <div>3$</div>
-            <p>Thé classique</p>
+        <div class="price-card">
+            <div class="price-card__cup-size">Petite Tasse</div>
+            <div class="price-car__price">3$</div>
+            <p class="price-card__desc">Thé classique</p>
         </div>
         
+        <div class="price-card">
+            <div class="price-card__cup-size">Moyenne Tasse</div>
+            <div class="price-car__price">5$</div>
+            <p class="price-card__desc">Populaire</p>
+        </div>
+
+        <div class="price-card">
+            <div class="price-card__cup-size">Grande Tasse/div>
+            <div class="price-car__price">6$</div>
+            <p class="price-card__desc">Meilleur choix</p>
+        </div>
     </section>
-    <section>
-        <h2>Nous joindre</h2>
+    <section id="contact">
+        <h2 class="contact__title">Nous joindre</h2>
         <div>
-            <div>
+            <div class="adresse">
                 <h3>Notre adresse</h3>
-                <p>4444 rue des Bulles Montréal, Qc, Canada H5H W4W</p>
+                <p class="adresse-desc">4444 rue des Bulles <br>Montréal, Qc, Canada <br>H5H W4W</p>
             </div>
-            <img src="./assets/maps_place.png" alt="">
+            <img src="./assets/maps_place.png" alt="image google maps de l'emplassement du magasin Boba">
         </div>
         <hr>
-        <div>
+        <div class="message">
             <h3>Nous contacter</h3>
             <div>
-                <div>
-                    <h4>Votre Nom</h4>
-                    <input type="text">
+                <div class="message-information">
+                    <label>Votre Nom</label>
+                    <input type="text" placeholder="Entrez votre nom">
                 </div>
-
+                <div class="message-information">
+                    <label>Votre Email</label>
+                    <input type="text" placeholder="Entrez votre email">
+                </div>
+                <div class="message-information">
+                    <label>Votre Message</label>
+                    <input type="text" placeholder="Écrivez votre message">
+                </div>
             </div>
             <div>
                 <button>Annuler</button>

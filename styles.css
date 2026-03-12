@@ -117,15 +117,20 @@ body {
 .navbar__logo {
     flex-shrink: 0;
 }
-.navbar__cta {
+button {
     background-color: var(--color-accent);
-    color: var(--color-cta);
-    border-radius: var(--border-radius-sm);
     border: none;
-    font-size: var(--font-size-sm);
-    padding: var(--space-xs) var(--space-md);
-    line-height: 157.143%;
     cursor: pointer;
+    white-space: nowrap;
+    padding: var(--space-sm);
+    font-weight: var(--font-weight-medium);
+    border-radius: var(--border-radius-lg);
+    color: var(--color-cta);
+}
+.navbar__cta {
+    border-radius: var(--border-radius-sm);
+    padding: var(--space-xs) var(--space-md);
+    font-weight: var(--font-weight-normal);
 }
 .hero { 
     background-image: url('./assets/boba_hero.png'); 
@@ -149,17 +154,14 @@ body {
     border-radius: var(--border-radius-xl);
 }
 .hero__header {
-    flex: 1 0 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: var(--space-xl);
 }
 .hero__title {
     font-family: var(--title-font);
     font-size: var(--font-size-5xl);
-    color: var(--color-secondary);
+    color: var(--color-bg-dark);
     line-height: 66.667%;
 }
 .hero__title-highlight {
@@ -182,17 +184,6 @@ body {
     flex: 1;
     background-color: var(--color-secondary);
     color: var(--color-text);
-    border-radius: var(--border-radius-lg);
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: var(--space-sm);
-    font-weight: var(--font-weight-medium);
-    line-height: 150%;
-    cursor: pointer;
-    white-space: nowrap;
 }
 .hero__buttons .hero__order-now {
     background-color: var(--color-primary);
@@ -424,6 +415,7 @@ section {
     background-color: var(--color-bg-icon);
     aspect-ratio: 1/1;
     border-radius: var(--border-radius-2xl);
+    padding: calc(var(--space-xxs)/2) ;
 }
 .comment-card__user-name {
     font-weight: var(--font-weight-medium);
