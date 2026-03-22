@@ -90,7 +90,7 @@
                     </div>
                     <div class="product-card__text-container">
                         <h3 class="product-card__title">Bubble Tea au lait</h3>
-                        <p class="product-card__description">Délicieux, crémeux et mémorable.</p>
+                        <p class="product-card__desc">Délicieux, crémeux et mémorable.</p>
                     </div>
                 </article>
                 <article class="product-card product-card--popular">
@@ -100,7 +100,7 @@
                     </div>
                     <div class="product-card__text-container">
                         <h3 class="product-card__title">Thé Glacé</h3>
-                        <p class="product-card__description">Rafraîchissant pour les journées chaudes.</p>
+                        <p class="product-card__desc">Rafraîchissant pour les journées chaudes.</p>
                     </div>
                 </article>
                 <article class="product-card">
@@ -110,7 +110,7 @@
                     </div>
                     <div class="product-card__text-container">
                         <h3 class="product-card__title">Thé aux Fruits</h3>
-                        <p class="product-card__description">Une explosion de saveurs en bouche.</p>
+                        <p class="product-card__desc">Une explosion de saveurs en bouche.</p>
                     </div>
                 </article>
             </div>
@@ -219,36 +219,39 @@
             <div class="prices-container">
                 <div class="price-card">
                     <div class="price-card__cup-size">Petite Tasse</div>
-                    <div class="price-car__price">3$</div>
-                    <p class="price-card__desc">Thé classique</p>
+                    <div class="price-card__price">3$</div>
+                    <p>Thé classique</p>
                 </div>
                 
                 <div class="price-card">
                     <div class="price-card__cup-size">Moyenne Tasse</div>
-                    <div class="price-car__price">5$</div>
-                    <p class="price-card__desc">Populaire</p>
+                    <div class="price-card__price">5$</div>
+                    <p>Populaire</p>
                 </div>
 
                 <div class="price-card">
                     <div class="price-card__cup-size">Grande Tasse</div>
-                    <div class="price-car__price">6$</div>
-                    <p class="price-card__desc">Meilleur choix</p>
+                    <div class="price-card__price">6$</div>
+                    <p>Meilleur choix</p>
                 </div>
             </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="section-light">
             <h2 class="contact__title">Nous joindre</h2>
-            <div>
-                <div class="adresse">
+            <div class="adress-container">
+                <div class="adress">
                     <h3>Notre adresse</h3>
-                    <p class="adresse-desc">4444 rue des Bulles <br>Montréal, Qc, Canada <br>H5H W4W</p>
+                    <p class="adress-desc">4444 rue des Bulles <br>Montréal, Qc, Canada <br>H5H W4W</p>
                 </div>
-                <img src="./assets/maps_place.png" alt="image google maps de l'emplassement du magasin Boba">
+                <div class="location-image">
+                    <img src="./assets/icons/place.svg" alt="location icon" class="location-icon">
+                    <img src="./assets/maps_place.png" alt="image google maps de l'emplassement du magasin Boba" class="adress-maps">
+                </div>
             </div>
             <hr>
             <div class="message">
                 <h3>Nous contacter</h3>
-                <div>
+                <div class="forum">
                     <div class="message-information">
                         <label>Votre Nom</label>
                         <input type="text" placeholder="Entrez votre nom">
@@ -263,7 +266,7 @@
                     </div>
                 </div>
                 <div>
-                    <button>Annuler</button>
+                    <button class="button-cancel">Annuler</button>
                     <button>Envoyer</button>
                 </div>
             </div>
@@ -271,11 +274,24 @@
     </main>
     <footer>
         <div>
-            <div></div>
+            <div>
+                <h4>Liens rapides:</h4>
+                <p>Acceuil, Services, Contact</p>
+            </div>
+            <div>|</div>
+            <div>
+                <h4>À propos de nous:</h4>
+                <p>Thé Bulle, local de qualité.</p>
+            </div>
+            <div>|</div>
+            <div>
+                <h4>Suivez-nous: </h4>
+                <p>[x] [f] [t] [i]</p>
+            </div>
         </div>
         <div>
             <h3>Où nous trouver ?</h3>
-            <img src="./assets/big_maps.png" alt="">
+            <img src="./assets/big_maps.pn" alt="">
         </div>
     </footer>
 </body>
