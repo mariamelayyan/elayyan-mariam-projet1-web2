@@ -512,7 +512,7 @@ section, footer {
     font-size: var(--font-size-xl);
 }
 hr {
-    width: 98vw;
+    width: 98.4477vw;
     border-top: 1px solid var(--color-bg-dark);
 }
 .message {
@@ -548,5 +548,38 @@ input {
     border: 1px solid var(--color-bg-dark);
 }
 footer {
-
+    padding: var(--space-3xl);
+}
+.footer-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-top__title {
+    font-weight: 600;
+}
+.footer-top__section {
+    text-align: center;
+}
+.footer__map {
+    width: 100%;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    font-family: var(--title-font);
+    font-size: var(--font-size-xl);
+}
+.footer__image-container {
+    width: calc(100vw - var(--space-3xl)*2);
+    min-height: 500px;
+    background: 
+    url(./assets/icons/place.svg),
+    url(./assets/big_maps.png) ;
+    background-position: 42% 28%, 42% 28%;
+    background-size: calc(30px + 1.5vw), cover;
+    background-repeat: no-repeat, no-repeat;
 }
