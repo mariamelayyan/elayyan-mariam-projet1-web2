@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Section entete de page -->
     <header>
+        <!--Section barre de navigation -->
         <nav class="navbar">
             <div class="navbar__brand">
                 <img class="navbar__logo" src="./assets/icons/bubble_chart_logo.svg" alt="logo du site Thé Bulles">
@@ -18,15 +20,15 @@
                 <li class="navbar__item"><a href="#about" class="navbar__links">À propos</a></li>
                 <li class="navbar__item"><a href="#services" class="navbar__links">Nos services</a></li>
                 <li class="navbar__item"><a href="#activities" class="navbar__links">Activités</a></li>
-                <li class="navbar__item"><a href="#testimonies" class="navbar__links">Témoignages</a></li>
+                <li class="navbar__item"><a href="#testimonials" class="navbar__links">Témoignages</a></li>
                 <li class="navbar__item"><a href="#contact" class="navbar__links">Nous joindre</a></li>
             </ul>
             <button class="navbar__cta">Commander</button>
         </nav>
-        
+        <!--Section hero-->
         <div class="hero">
             <div class="hero__header">
-                <h1 class="hero__title">Chez <span class="hero__title-highlight">Thé Bulles</span></h1>
+                <h1 class="hero__title">Chez <span class="hero__title--highlight">Thé Bulles</span></h1>
                 <p class="hero__desc">Découvrez notre sélection de thés maison exquis.</p>
                 <div class="hero__buttons">
                     <button class="hero__learn-more">En savoir plus</button>
@@ -37,7 +39,9 @@
         </div>
     </header>
     <hr>
+    <!--Section contenus-->
     <main>
+        <!--Section à propos-->
         <section id="about">
             <div class="section-header">
                 <h2>À propos</h2>
@@ -49,7 +53,7 @@
                         <img src="./assets/icons/history_edu.svg" alt="icône d'une feuille de papier et d'une plume" class="about-card__icon">
                         <div class="about-card__text">
                             <h3 class="about-card__title">Notre histoire</h3>
-                            <p class="about-card__descr">Chez Thé Bulle, chaque tasse de thé est préparée avec soin.</p>
+                            <p class="about-card__desc">Chez Thé Bulle, chaque tasse de thé est préparée avec soin.</p>
                             <div class="about-card__signature">
                                 <div class="about-card__avatar"></div>
                                 <p class="about-card__name">L'équipe Thé Bulle</p>
@@ -73,14 +77,14 @@
                         <img src="./assets/icons/relaxation.svg" alt="icône de relaxation" class="about-card__icon">
                     <div class="about-card__text">
                         <h3 class="about-card__title">Citation importante</h3>
-                        <blockquote class="about-card__desc about-card__quote">"Le thé a une magie qui unit l'esprit et le cœur."</blockquote>
+                        <blockquote class="about-card__desc">"Le thé a une magie qui unit l'esprit et le cœur."</blockquote>
                     </div>
                     
                 </div>
-
             </div>
         </section>
-        <section id="services" class="section-light">
+        <!--Section produits-->
+        <section id="services" class="section--light">
             <h2>Nos produits</h2>
             <div class="products__cards-container">
                 <article class="product-card">
@@ -115,57 +119,58 @@
                 </article>
             </div>
         </section>
-
-        <section id="activities" class="section-light">
+        <!--Section d'heures d'ouverture-->
+        <section id="activities" class="section--light">
             <div class="section-header">
                 <h2>Heures d'ouvertures</h2>
                 <p class="section-header__desc">Venez nous rendre visite !</p>
             </div>
-            <div class="oppenings__cards-container">
-                <div class="oppenings-card">
-                    <div class="oppenings-card__icon icon">
+            <div class="openings-container">
+                <div class="openings-card">
+                    <div class="openings-card__icon icon">
                         🕔
                     </div>
-                    <h3 class="oppenings-card__date">Lundi-Vendredi</h3>
-                    <p class="oppenings-card__hour">10h-22h</p>
+                    <h3 class="openings-card__day">Lundi-Vendredi</h3>
+                    <p class="openings-card__hour">10h-22h</p>
                 </div>
-                <div class="oppenings-card">
-                    <div class="oppenings-card__icon icon">
+                <div class="openings-card">
+                    <div class="openings-card__icon icon">
                         🕔
                     </div>
-                    <h3 class="oppenings-card__date">Samedi</h3>
-                    <p class="oppenings-card__hour">11h-23h</p>
+                    <h3 class="openings-card__day">Samedi</h3>
+                    <p class="openings-card__hour">11h-23h</p>
                 </div>
-                <div class="oppenings-card">
-                    <div class="oppenings-card__icon icon">
+                <div class="openings-card">
+                    <div class="openings-card__icon icon">
                         🕔
                     </div>
-                    <h3 class="oppenings-card__date">Dimanche</h3>
-                    <p class="oppenings-card__hour">10h-20h</p>
+                    <h3 class="openings-card__day">Dimanche</h3>
+                    <p class="openings-card__hour">10h-20h</p>
                 </div>
             </div>
         </section>
-        <section id="testimonials" class="section-light">
+        <!--Section témoignages-->
+        <section id="testimonials" class="section--light">
             <h2>Témoignages</h2>
             <div class="comments-container">
-                <div class="comment-card">
-                    <div class="comment-card__header">
-                        <img src="./assets/icons/person.svg" alt="icon de personne" class="comment-card__avatar">
-                        <h3 class=".comment-card__user-name">Sophie</h3>
+                <div class="user-comment">
+                    <div class="user-comment__header">
+                        <img src="./assets/icons/person.svg" alt="icon de personne" class="user-comment__avatar">
+                        <h3 class="user-comment__user-name">Sophie</h3>
                     </div>
-                    <p class="comment-card__text">Meilleur bubble tea que j'aie jamais goûté !</p>
+                    <p class="user-comment__text">Meilleur bubble tea que j'aie jamais goûté !</p>
                 </div>
-                <div class="comment-card">
-                    <div class="comment-card__header">
-                        <img src="./assets/icons/person.svg" alt="icon de personne" class="comment-card__avatar">
-                        <h3 class=".comment-card__user-name">Jean</h3>
+                <div class="user-comment">
+                    <div class="user-comment__header">
+                        <img src="./assets/icons/person.svg" alt="icon de personne" class="user-comment__avatar">
+                        <h3 class="user-comment__user-name">Jean</h3>
                     </div>
-                    <p class="comment-card__text">Un endroit agréable pour se détendre.</p>
+                    <p class="user-comment__text">Un endroit agréable pour se détendre.</p>
                 </div>
             </div>
         </section>
-
-        <section class="section-horizantal">
+        <!--Section rejoindre les membres de l'équipe-->
+        <section class="section--horizantal">
             <img src="./assets/icons/supervisor_account.svg" alt="icon d'équipe" class="contact-team__icon icon">
             
             <div class="contact-team__desc">
@@ -176,7 +181,7 @@
             <button>Rejoindre notre équipe</button>
         </section>
         <hr>
-        <section class="section-horizantal">
+        <section class="section--horizantal">
             <div class="team-member">
                 <img src="./assets/icons/User.svg" alt="icon d'utilisateur" class="team-member__icon ">
                 <div class="team-member__desc">
@@ -208,10 +213,9 @@
                     <p>Créateur de recettes</p>
                 </div>
             </div>
-
         </section>
-
-        <section class="section-light">
+        <!--Section prix des produits-->
+        <section class="section--light">
             <div class="section-header">
                 <h2>Nos prix</h2>
                 <p class="section-header__desc">Choisissez votre offre.</p>
@@ -236,8 +240,9 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="section-light">
-            <h2 class="contact__title">Nous joindre</h2>
+        <!--Section nous joindre-->
+        <section id="contact" class="section--light">
+            <h2 class="contact-title">Nous joindre</h2>
             <div class="adress-container">
                 <div class="adress">
                     <h3>Notre adresse</h3>
@@ -272,7 +277,9 @@
             </div>
         </section>
     </main>
+    <!--Section bas de page (footer)-->
     <footer>
+        <!-- Section liens de bas de page -->
         <div class="footer-top">
             <div class="footer-top__section">
                 <h4 class="footer-top__title">Liens rapides:</h4>
@@ -289,6 +296,7 @@
                 <p>[x] [f] [t] [i]</p>
             </div>
         </div>
+        <!-- Section carte d'emplacement en bas de page -->
         <div class="footer-bottom">
             <h3>Où nous trouver ?</h3>
             <div class="footer__image-container"></div>

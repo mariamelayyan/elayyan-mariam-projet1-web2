@@ -1,3 +1,102 @@
+/**
+* Navbar - Barre de navigation
+*
+* Éléments :
+
+* navbar__brand :  marque de l'établissement
+* navbar__logo :  logo de l'établissement
+* navbar__brand-title: nom de la marque de l'établissement
+
+* navbar__list :  la liste des liens
+* navbar__item : un élément de la liste des liens
+* navbar__links : les liens cliquables
+
+*  navbar__cta: bouton d’appel à l’action (commander)
+
+* Hero - Bannière d’accueil
+
+* Éléments :
+* hero__header : conteneur du texte principal (titre, description)
+* hero__title : titre principal de la section
+* hero__title--highlight : partie du titre mise en valeur (couleur différent)
+* hero__desc :  courte description sous le titre
+
+* hero__buttons : conteneur des boutons
+* hero__learn-more : bouton “en savoir plus”
+* hero__order-now : bouton principal (commander maintenant)
+
+* hero__image-container :  conteneur de l’image secondaire
+
+* Section-header : conteneur du titre et l’introduction d’une section
+* Section--light : modificateur pour une section avec fond clair
+
+* Éléments :
+* section-header__desc : description (texte sous le titre de la section)
+
+* About - Section à propos
+
+* Éléments : 
+* about__cards-container : conteneur regroupant toutes les cartes
+* about__top-cards : sous-conteneur pour les cartes situées en haut de la section
+
+* About-card - carte présentant des informations “à propos”
+
+* Éléments :
+* about-card--full-width : modificateur pour que la carte prenne toute la largeur disponible
+* about-card__icon : icône associée à la carte 
+* about-card__text : contenu texte
+* about-card__title : titre principal de la carte
+* about-card__desc : description de la carte
+
+* about-card__signature : zone signature / auteur 
+* about-card__avatar : image de la personne
+* about-card__name : nom de la personne associée
+
+*Products-card - la carte du produit
+
+* Éléments :
+* product-card__image-container : conteneur pour l’image du produit
+* product-card__badge : badge du produit
+* product-card__image-title : titre affiché sur l’image
+
+* product-card__text-container : conteneur pour le texte (titre, description)
+* product-card__title : nom du produit
+* product-card__desc : description du produit
+
+* openings-card -  carte de temps d'ouverture
+
+* Éléments :
+* openings-card__icon : icon d'horloge pour carte d'ouverture
+* openings-card__day : Le jour d'ouverture
+* openings-card__hour : l'heure d'ouverture
+
+* User-comment - Commentaire d'un client
+
+* Éléments :
+* user-comment__header : entête du commentaire (avatar, nom)
+* user-comment__avatar : image de profil de l’utilisateur
+* user-comment__user-name : nom de l’utilisateur
+* user-comment__text : texte du commentaire
+
+* Team-member - Membres de l'équipe
+
+* Éléments :
+* team-member__icon : icône ou photo de la personne
+* team-member__desc : description ou rôle dans l’équipe
+* team-member__name : nom du membre de l’équipe
+
+* price-card - Carte du prix du produit
+
+* Éléments :
+* price-card__cup-size : taille ou option du produit
+* price-card__price : prix correspondant
+
+* footer-top - Section du pied de page
+
+* Éléments :
+* footer-top__section : sous-section dans le pied de page
+* footer-top__title : titre de la sous-section
+*/
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap');
 :root {
@@ -154,7 +253,7 @@ button {
     color: var(--color-bg-dark);
     line-height: 66.667%;
 }
-.hero__title-highlight {
+.hero__title--highlight {
     color: var(--color-primary);
 }
 .hero__desc {
@@ -192,9 +291,13 @@ section, footer {
     align-items: center;
     gap: var(--space-3xl);
 }
-.section-light {
+.section--light {
     background-color: var(--color-text-light);
     color: var(--color-text) ;
+}
+.section--horizantal {
+    flex-direction: row;
+    gap: var(--space-2xl) ;
 }
 .section-header {
     display: flex;
@@ -229,6 +332,7 @@ section, footer {
 }
 .about-card {
     flex: 1;
+    align-self: stretch;
     background-color: var(--color-bg-light);
     color: var(--color-text);
     border-radius: var(--border-radius-lg);
@@ -241,6 +345,9 @@ section, footer {
 .about-card__icon {
     background-color: var(--color-primary);
     border-radius: var(--border-radius-md);
+    aspect-ratio: 1/1;
+    width: 100px;
+
 }
 .about-card__title {
     font-weight: var(--font-weight-bold);
@@ -339,14 +446,14 @@ section, footer {
 #activities {
         background-color: var(--color-bg-light);
 }
-.oppenings__cards-container {
+.openings-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
     gap: var(--space-2xl);
 }
-.oppenings-card {
+.openings-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,18 +471,18 @@ section, footer {
     border-radius: var(--border-radius-2xl);
     padding: var(--space-xxs);
 }
-.oppenings-card__icon {
+.openings-card__icon {
     font-size: var(--font-size-3xl);
     width: 6.25rem;
     white-space: nowrap;
         background-color: var(--color-bg-icon);
         color: var(--color-text-light);
 }
-.oppenings-card__date {
+.openings-card__day {
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
 }
-.oppenings-card__hour {
+.openings-card__hour {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-medium);
 }
@@ -392,7 +499,7 @@ section, footer {
     padding: var(--space-lg);
     align-items: center;
 }
-.comment-card {
+.user-comment {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -401,23 +508,19 @@ section, footer {
     background-color: var(--color-bg-light);
     border-radius: var(--border-radius-md);
 }
-.comment-card__header {
+.user-comment__header {
     display: flex;
     gap: var(--space-xxs);
 }
-.comment-card__avatar {
+.user-comment__avatar {
     background-color: var(--color-bg-icon);
     aspect-ratio: 1/1;
     border-radius: var(--border-radius-2xl);
     padding: calc(var(--space-xxs)/2) ;
 }
-.comment-card__user-name {
+.user-comment__user-name {
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-sm);
-}
-.section-horizantal {
-    flex-direction: row;
-    gap: var(--space-2xl) ;
 }
 .contact-team__icon {
     background-color: var(--color-accent);
@@ -476,7 +579,7 @@ section, footer {
     background-color: var(--color-bg-light);
 }
 
-.contact__title {
+.contact-title {
     color: var(--color-accent);
 }
 .adress-container {
@@ -512,7 +615,7 @@ section, footer {
     font-size: var(--font-size-xl);
 }
 hr {
-    width: 98.4477vw;
+    width: 98vw;
     border-top: 1px solid var(--color-bg-dark);
 }
 .message {
