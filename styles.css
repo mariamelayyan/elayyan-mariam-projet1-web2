@@ -1,59 +1,123 @@
 /**
 * Navbar - Barre de navigation
 *
+* Utilisation : 
+<nav class="navbar">
+    <div class="navbar__brand">
+        <img class="navbar__logo" src="">
+        <h1 class="navbar__brand-title"></h1>
+    </div>
+    <ul class="navbar__list">
+        <li class="navbar__item"><aclass="navbar__links">...</a></li>
+    </ul>
+    <button class="navbar__cta">...</button>
+</nav>
+*
 * Éléments :
-
 * navbar__brand :  marque de l'établissement
 * navbar__logo :  logo de l'établissement
 * navbar__brand-title: nom de la marque de l'établissement
-
+*
 * navbar__list :  la liste des liens
 * navbar__item : un élément de la liste des liens
 * navbar__links : les liens cliquables
-
+*
 *  navbar__cta: bouton d’appel à l’action (commander)
 
 * Hero - Bannière d’accueil
-
+* Utilisation : 
+<div class="hero">
+    <div class="hero__header">
+        <h1 class="hero__title">...<span class="hero__title--highlight">.....</span></h1>
+        <p class="hero__desc">...</p>
+        <div class="hero__buttons">
+            <button class="hero__learn-more"></button>
+            <button class="hero__order-now"></button>
+        </div>
+    </div>
+    <div class="hero__image-container"></div>
+</div>
+*
 * Éléments :
 * hero__header : conteneur du texte principal (titre, description)
 * hero__title : titre principal de la section
-* hero__title--highlight : partie du titre mise en valeur (couleur différent)
 * hero__desc :  courte description sous le titre
-
+*
 * hero__buttons : conteneur des boutons
 * hero__learn-more : bouton “en savoir plus”
 * hero__order-now : bouton principal (commander maintenant)
-
+*
 * hero__image-container :  conteneur de l’image secondaire
+*
+* Variante : 
+** hero__title--highlight : partie du titre mise en valeur (couleur différent)
+
 
 * Section-header : conteneur du titre et l’introduction d’une section
-* Section--light : modificateur pour une section avec fond clair
-
+* Utilisation: 
+* div class="section-header">
+    <h2>...</h2>
+    <p class="section-header__desc">...</p>
+</div>
 * Éléments :
 * section-header__desc : description (texte sous le titre de la section)
+*
+* Variante : 
+* section--light : modificateur pour une section avec fond clair
+* section--horizantal : Emplacement horizantale des contenus de la section
 
 * About - Section à propos
-
+* Utilisation : 
+* <section id="about">
+        <div class="about__cards-container">
+            <div class="about__top-cards">
+            ...
+            </div>
+        </div>
+    </section>
 * Éléments : 
 * about__cards-container : conteneur regroupant toutes les cartes
 * about__top-cards : sous-conteneur pour les cartes situées en haut de la section
 
 * About-card - carte présentant des informations “à propos”
-
+* Utilisation : 
+<div class="about-card">
+    <img src=""class="about-card__icon">
+    <div class="about-card__text">
+        <h3 class="about-card__title">...</h3>
+        <p class="about-card__desc">...</p>
+        <div class="about-card__signature">
+            <div class="about-card__avatar"></div>
+            <p class="about-card__name"></p>
+        </div>
+    </div>
+</div>
 * Éléments :
-* about-card--full-width : modificateur pour que la carte prenne toute la largeur disponible
 * about-card__icon : icône associée à la carte 
 * about-card__text : contenu texte
 * about-card__title : titre principal de la carte
 * about-card__desc : description de la carte
-
+*
 * about-card__signature : zone signature / auteur 
 * about-card__avatar : image de la personne
 * about-card__name : nom de la personne associée
+*
+* Variante : 
+* about-card--full-width : modificateur pour que la carte prenne toute la largeur disponible
 
 *Products-card - la carte du produit
-
+* Utilisation: 
+* <article class="product-card">
+        <div class="product-card__image-container">
+            <div class="product-card__badge"></div>
+            <div class="product-card__image-title"></div>
+        </div>
+        <div class="product-card__text-container">
+            <h3 class="product-card__title"></h3>
+            <p class="product-card__desc"></p>
+        </div>
+    </article>
+*
 * Éléments :
 * product-card__image-container : conteneur pour l’image du produit
 * product-card__badge : badge du produit
@@ -64,14 +128,28 @@
 * product-card__desc : description du produit
 
 * openings-card -  carte de temps d'ouverture
-
+* Utilisation : 
+* <div class="openings-card">
+        <div class="openings-card__icon icon"></div>
+        <h3 class="openings-card__day"></h3>
+        <p class="openings-card__hour"></p>
+    </div>
+*
 * Éléments :
 * openings-card__icon : icon d'horloge pour carte d'ouverture
 * openings-card__day : Le jour d'ouverture
 * openings-card__hour : l'heure d'ouverture
 
 * User-comment - Commentaire d'un client
-
+* Utilisation : 
+* <div class="user-comment">
+        <div class="user-comment__header">
+            <img src="" class="user-comment__avatar">
+            <h3 class="user-comment__user-name"></h3>
+        </div>
+        <p class="user-comment__text">...</p>
+    </div>
+*
 * Éléments :
 * user-comment__header : entête du commentaire (avatar, nom)
 * user-comment__avatar : image de profil de l’utilisateur
@@ -79,24 +157,44 @@
 * user-comment__text : texte du commentaire
 
 * Team-member - Membres de l'équipe
-
+* Utilisation : 
+* <div class="team-member">
+        <img src=""  class="team-member__icon">
+        <div class="team-member__desc">
+            <h4 class="team-member__name"></h4>
+            <p></p>
+        </div>
+    </div>
+*
 * Éléments :
 * team-member__icon : icône ou photo de la personne
 * team-member__desc : description ou rôle dans l’équipe
 * team-member__name : nom du membre de l’équipe
 
-* price-card - Carte du prix du produit
-
+* Price-card - Carte du prix du produit
+* Utilisation : 
+* <div class="price-card">
+        <div class="price-card__cup-size"></div>
+        <div class="price-card__price"></div>
+        <p></p>
+    </div>
 * Éléments :
 * price-card__cup-size : taille ou option du produit
 * price-card__price : prix correspondant
 
-* footer-top - Section du pied de page
-
+* Footer-top - Section du pied de page
+* Utilisation : 
+*<div class="footer-top">
+    <div class="footer-top__section">
+        <h4 class="footer-top__title"></h4>
+        <p></p>
+    </div>
+*
 * Éléments :
 * footer-top__section : sous-section dans le pied de page
 * footer-top__title : titre de la sous-section
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap');
 :root {
