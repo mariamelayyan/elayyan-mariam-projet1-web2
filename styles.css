@@ -444,8 +444,8 @@ section, footer {
     background-color: var(--color-primary);
     border-radius: var(--border-radius-md);
     aspect-ratio: 1/1;
-    width: 100px;
-
+    width: 4.38rem;
+    padding: var(--space-sm);
 }
 .about-card__title {
     font-weight: var(--font-weight-bold);
