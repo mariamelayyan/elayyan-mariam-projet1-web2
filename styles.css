@@ -573,8 +573,8 @@ section, footer {
     font-size: var(--font-size-3xl);
     width: 6.25rem;
     white-space: nowrap;
-        background-color: var(--color-bg-icon);
-        color: var(--color-text-light);
+    background-color: var(--color-bg-icon);
+    color: var(--color-text-light);
 }
 .openings-card__day {
     font-size: var(--font-size-xl);
@@ -633,6 +633,7 @@ section, footer {
     font-family: var(--title-font);
     color: var(--color-accent);
     font-size: var(--font-size-xl);
+    white-space: nowrap;
 }
 .team-member {
     display: flex;
@@ -682,9 +683,9 @@ section, footer {
 }
 .adress-container {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    gap: var(--space-2xl);
     align-items: center;
 }
 .adress {
@@ -693,18 +694,21 @@ section, footer {
     gap: var(--space-sm);
 }
 .adress-desc {
+    white-space: nowrap;
     font-size: var(--font-size-lg);
 }
-.adress-maps {
-    width: 25.25rem;
+.location-image {
     border: 1px solid var(--color-bg-dark);
     border-radius: var(--border-radius-lg);
-}
-.location-icon {
-    position: relative;
-    left: 10.5rem;
-    bottom: 11.8rem;
-
+    width: 25.25rem;
+    min-width: 200px;
+    height: 18rem;
+    background: 
+    url(./assets/icons/place.svg),
+    url(./assets/maps_place.png);
+    background-position: 33% 23%, 33% 23%;
+    background-size: calc(30px + 1.5vw), cover;
+    background-repeat: no-repeat, no-repeat;
 }
 
 #contact h3 {
@@ -724,7 +728,7 @@ hr {
     gap: var(--space-2xl);
 }
 .forum {
-    width: 100%;
+    align-self: stretch;
     display: flex;
     justify-content: space-between;
 }
